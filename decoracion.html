@@ -1,0 +1,751 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Decoracion para Eventos | Fiesta en Casa</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="Encuentra las mejores empresas de decoracion para eventos en Mexico. Flores, globos, tematicas, iluminacion y mas.">
+
+  <meta property="og:title" content="Decoracion para Eventos - Fiesta en Casa">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Decoracion para Eventos">
+  <meta property="og:description" content="Directorio de empresas de decoracion para eventos sociales en Mexico">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#6366f1">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header__container">
+      <a href="/" class="header__logo">
+        <img src="img/fiesta-en-casa.png" alt="Fiesta en Casa" class="header__logo-img">
+      </a>
+
+      <nav class="header__nav" id="mainNav">
+        <a href="/" class="header__nav-link">Inicio</a>
+        <a href="categorias.html" class="header__nav-link header__nav-link--active">Categorias</a>
+        <a href="/#contacto" class="header__nav-link">Contacto</a>
+      </nav>
+
+      <div class="header__actions">
+        <a href="#registrar" class="header__btn header__btn--outline">Registrar Empresa</a>
+        <button class="header__menu-toggle" id="menuToggle" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Category Hero -->
+  <section class="category-hero category-hero--two-col">
+    <div class="category-hero__bg"></div>
+    <div class="category-hero__container">
+      <div class="category-hero__breadcrumb">
+        <a href="/">Inicio</a>
+        <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+        <span>Decoracion</span>
+      </div>
+
+      <div class="category-hero__grid">
+        <div class="category-hero__content">
+          <div class="category-hero__icon">
+            <svg width="48" height="48" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+            </svg>
+          </div>
+          <h1 class="category-hero__title">Decoracion para Eventos</h1>
+          <p class="category-hero__subtitle">Transforma cualquier espacio en un lugar magico. Encuentra los mejores decoradores, floristas y disenadores de eventos en Mexico.</p>
+
+          <div class="category-hero__stats">
+            <div class="category-hero__stat">
+              <span class="category-hero__stat-number">380+</span>
+              <span class="category-hero__stat-label">Empresas</span>
+            </div>
+            <div class="category-hero__stat">
+              <span class="category-hero__stat-number">4.8</span>
+              <span class="category-hero__stat-label">Calificacion Promedio</span>
+            </div>
+            <div class="category-hero__stat">
+              <span class="category-hero__stat-number">12k+</span>
+              <span class="category-hero__stat-label">Eventos Realizados</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="category-hero__info">
+          <div class="category-hero__info-card">
+            <h2 class="category-hero__info-title">Servicios de Decoracion Profesional en Mexico</h2>
+            <p class="category-hero__info-text">
+              La decoracion es el elemento que define la atmosfera y personalidad de tu evento. En Fiesta en Casa conectamos a los organizadores con los mejores profesionales en decoracion de bodas, XV anos, bautizos, fiestas infantiles y eventos corporativos. Nuestro directorio incluye especialistas en arreglos florales, decoracion con globos, iluminacion ambiental, centros de mesa, backdrops y montajes tematicos que haran de tu celebracion una experiencia inolvidable.
+            </p>
+            <p class="category-hero__info-text">
+              Cada decorador en nuestra plataforma ha sido verificado para garantizar calidad y profesionalismo. Compara portafolios, lee resenas de clientes reales y solicita cotizaciones sin compromiso. Ya sea que busques un estilo clasico y elegante, moderno y minimalista, o una tematica especifica, aqui encontraras al experto ideal para materializar tu vision y crear ambientes que cautiven a tus invitados desde el primer momento.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filters & Search -->
+  <section class="category-filters">
+    <div class="category-filters__container">
+      <div class="category-filters__search">
+        <svg class="category-filters__search-icon" width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+        </svg>
+        <input type="text" class="category-filters__search-input" placeholder="Buscar en decoracion...">
+      </div>
+
+      <div class="category-filters__options">
+        <select class="category-filters__select">
+          <option value="">Ubicacion</option>
+          <option value="cdmx">Ciudad de Mexico</option>
+          <option value="guadalajara">Guadalajara</option>
+          <option value="monterrey">Monterrey</option>
+          <option value="puebla">Puebla</option>
+          <option value="cancun">Cancun</option>
+        </select>
+
+        <select class="category-filters__select">
+          <option value="">Tipo de Decoracion</option>
+          <option value="flores">Arreglos Florales</option>
+          <option value="globos">Globos y Bombas</option>
+          <option value="tematica">Decoracion Tematica</option>
+          <option value="iluminacion">Iluminacion</option>
+          <option value="mobiliario">Mobiliario Decorativo</option>
+          <option value="integral">Decoracion Integral</option>
+        </select>
+
+        <select class="category-filters__select">
+          <option value="">Ordenar por</option>
+          <option value="rating">Mejor Calificados</option>
+          <option value="reviews">Mas Resenados</option>
+          <option value="recent">Mas Recientes</option>
+        </select>
+      </div>
+    </div>
+  </section>
+
+  <!-- Subcategories -->
+  <section class="subcategories">
+    <div class="subcategories__container">
+      <div class="subcategories__scroll">
+        <a href="#flores" class="subcategory-chip subcategory-chip--active">
+          <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+          </svg>
+          Todos
+        </a>
+        <a href="#flores" class="subcategory-chip">
+          <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+          </svg>
+          Arreglos Florales
+        </a>
+        <a href="#globos" class="subcategory-chip">
+          <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+          Globos
+        </a>
+        <a href="#tematica" class="subcategory-chip">
+          <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/>
+          </svg>
+          Tematica
+        </a>
+        <a href="#iluminacion" class="subcategory-chip">
+          <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+          </svg>
+          Iluminacion
+        </a>
+        <a href="#centros" class="subcategory-chip">
+          <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+          </svg>
+          Centros de Mesa
+        </a>
+        <a href="#backdrops" class="subcategory-chip">
+          <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+          </svg>
+          Backdrops
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Results Grid -->
+  <section class="category-results">
+    <div class="category-results__container">
+      <div class="category-results__header">
+        <p class="category-results__count">Mostrando <strong>380</strong> empresas de decoracion</p>
+        <div class="category-results__view-toggle">
+          <button class="view-btn view-btn--active" aria-label="Vista de cuadricula">
+            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/>
+            </svg>
+          </button>
+          <button class="view-btn" aria-label="Vista de lista">
+            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Featured Banner -->
+      <div class="featured-banner">
+        <div class="featured-banner__content">
+          <span class="featured-banner__badge">Destacado</span>
+          <h3 class="featured-banner__title">Flores & Detalles Premium</h3>
+          <p class="featured-banner__description">Especialistas en decoracion floral de alta gama para bodas y eventos exclusivos</p>
+          <div class="featured-banner__meta">
+            <span class="featured-banner__rating">★★★★★ 4.9</span>
+            <span class="featured-banner__location">Ciudad de Mexico</span>
+          </div>
+        </div>
+        <a href="#" class="featured-banner__btn">Ver Perfil</a>
+      </div>
+
+      <!-- Business Grid -->
+      <div class="business-grid">
+
+        <!-- REDEIL (rentadeiluminacion.com) - Card -->
+        <article class="business-card business-card--detailed business-card--featured">
+          <a href="decoracion/rentadeiluminacion.html" class="business-card__link-wrapper">
+            <div class="business-card__image">
+              <div class="business-card__image-placeholder business-card__image-placeholder--brand">
+                <span class="business-card__brand-text">REDEIL</span>
+              </div>
+              <span class="business-card__badge business-card__badge--premium">Premium</span>
+              <span class="business-card__badge business-card__badge--verified-small">
+                <svg width="12" height="12" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+              </span>
+            </div>
+            <div class="business-card__content">
+              <div class="business-card__tags">
+                <span class="business-card__tag">Iluminacion</span>
+                <span class="business-card__tag">Audio</span>
+                <span class="business-card__tag">Efectos</span>
+              </div>
+              <h3 class="business-card__name">REDEIL - Renta de Iluminacion</h3>
+              <p class="business-card__location">
+                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+                Cuauhtemoc, Ciudad de Mexico
+              </p>
+              <p class="business-card__excerpt">Solucion integral en renta de equipo para eventos en CDMX. Iluminacion, sonido y efectos especiales. Guirnaldas, neon, laser, humo, confeti y mas.</p>
+              <a href="https://rentadeiluminacion.com/" target="_blank" rel="noopener noreferrer" class="business-card__website" onclick="event.stopPropagation();">
+                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                </svg>
+                rentadeiluminacion.com
+              </a>
+              <div class="business-card__footer">
+                <div class="business-card__rating">
+                  <span class="business-card__stars">★★★★★</span>
+                  <span class="business-card__reviews">(84)</span>
+                </div>
+                <a href="decoracion/rentadeiluminacion.html" class="business-card__link">Ver mas</a>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- PALED - Pantallas LED - Card -->
+        <article class="business-card business-card--detailed business-card--featured">
+          <a href="decoracion/pantallas-led.html" class="business-card__link-wrapper">
+            <div class="business-card__image">
+              <div class="business-card__image-placeholder business-card__image-placeholder--brand">
+                <span class="business-card__brand-text">PALED</span>
+              </div>
+              <span class="business-card__badge business-card__badge--premium">Premium</span>
+              <span class="business-card__badge business-card__badge--verified-small">
+                <svg width="12" height="12" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+              </span>
+            </div>
+            <div class="business-card__content">
+              <div class="business-card__tags">
+                <span class="business-card__tag">Pantallas LED</span>
+                <span class="business-card__tag">Venta y Renta</span>
+                <span class="business-card__tag">Eventos</span>
+              </div>
+              <h3 class="business-card__name">PALED - Pantallas LED</h3>
+              <p class="business-card__location">
+                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+                Polanco, Ciudad de Mexico
+              </p>
+              <p class="business-card__excerpt">Lideres en venta y renta de pantallas LED en Mexico. +30 anos de experiencia. Conciertos, ferias, exposiciones, eventos corporativos y sociales.</p>
+              <a href="https://pantalla-led.com/" target="_blank" rel="noopener noreferrer" class="business-card__website" onclick="event.stopPropagation();">
+                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                </svg>
+                pantalla-led.com
+              </a>
+              <div class="business-card__footer">
+                <div class="business-card__rating">
+                  <span class="business-card__stars">★★★★★</span>
+                  <span class="business-card__reviews">(156)</span>
+                </div>
+                <a href="decoracion/pantallas-led.html" class="business-card__link">Ver mas</a>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- PODIUMEX - Card -->
+        <article class="business-card business-card--detailed business-card--featured">
+          <a href="decoracion/podiumex.html" class="business-card__link-wrapper">
+            <div class="business-card__image">
+              <div class="business-card__image-placeholder business-card__image-placeholder--brand">
+                <span class="business-card__brand-text">PODIUMEX</span>
+              </div>
+              <span class="business-card__badge business-card__badge--premium">Premium</span>
+              <span class="business-card__badge business-card__badge--verified-small">
+                <svg width="12" height="12" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+              </span>
+            </div>
+            <div class="business-card__content">
+              <div class="business-card__tags">
+                <span class="business-card__tag">Podiums</span>
+                <span class="business-card__tag">Corporativos</span>
+                <span class="business-card__tag">Conferencias</span>
+              </div>
+              <h3 class="business-card__name">PODIUMEX</h3>
+              <p class="business-card__location">
+                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+                CDMX, Monterrey, Guadalajara
+              </p>
+              <p class="business-card__excerpt">Primer servicio digital de renta de podiums en Mexico. Acrilico, madera, LED. Entrega express 24hrs. Grabado laser corporativo. +500 eventos.</p>
+              <a href="https://podiumex.com/" target="_blank" rel="noopener noreferrer" class="business-card__website" onclick="event.stopPropagation();">
+                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                </svg>
+                podiumex.com
+              </a>
+              <div class="business-card__footer">
+                <div class="business-card__rating">
+                  <span class="business-card__stars">★★★★★</span>
+                  <span class="business-card__reviews">(98)</span>
+                </div>
+                <a href="decoracion/podiumex.html" class="business-card__link">Ver mas</a>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- BOLDIS - Card -->
+        <article class="business-card business-card--detailed business-card--featured">
+          <a href="decoracion/boldis.html" class="business-card__link-wrapper">
+            <div class="business-card__image">
+              <div class="business-card__image-placeholder business-card__image-placeholder--brand">
+                <span class="business-card__brand-text">BOLDIS</span>
+              </div>
+              <span class="business-card__badge business-card__badge--premium">Premium</span>
+              <span class="business-card__badge business-card__badge--verified-small">
+                <svg width="12" height="12" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+              </span>
+            </div>
+            <div class="business-card__content">
+              <div class="business-card__tags">
+                <span class="business-card__tag">Bolas Disco</span>
+                <span class="business-card__tag">Iluminacion</span>
+                <span class="business-card__tag">LED RGB</span>
+              </div>
+              <h3 class="business-card__name">BOLDIS</h3>
+              <p class="business-card__location">
+                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+                Ciudad de Mexico
+              </p>
+              <p class="business-card__excerpt">Lider en renta y venta de bolas disco profesionales. +20 anos de experiencia. Desde 30cm hasta 200cm. Instalacion incluida desde $1,299.</p>
+              <a href="https://bolasdisco.com/" target="_blank" rel="noopener noreferrer" class="business-card__website" onclick="event.stopPropagation();">
+                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                </svg>
+                bolasdisco.com
+              </a>
+              <div class="business-card__footer">
+                <div class="business-card__rating">
+                  <span class="business-card__stars">★★★★★</span>
+                  <span class="business-card__reviews">(127)</span>
+                </div>
+                <a href="decoracion/boldis.html" class="business-card__link">Ver mas</a>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- DEGLOB / FANTASY GLOBOS - Card -->
+        <article class="business-card business-card--detailed business-card--featured">
+          <a href="decoracion/fantasy-globos.html" class="business-card__link-wrapper">
+            <div class="business-card__image">
+              <div class="business-card__image-placeholder business-card__image-placeholder--brand">
+                <span class="business-card__brand-text">DEGLOB</span>
+              </div>
+              <span class="business-card__badge business-card__badge--premium">Premium</span>
+              <span class="business-card__badge business-card__badge--verified-small">
+                <svg width="12" height="12" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+              </span>
+            </div>
+            <div class="business-card__content">
+              <div class="business-card__tags">
+                <span class="business-card__tag">Globos</span>
+                <span class="business-card__tag">Arcos</span>
+                <span class="business-card__tag">Eventos</span>
+              </div>
+              <h3 class="business-card__name">DEGLOB - Fantasy Globos</h3>
+              <p class="business-card__location">
+                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+                Polanco, Ciudad de Mexico
+              </p>
+              <p class="business-card__excerpt">Decoracion profesional con globos para bodas, XV anos, fiestas infantiles y eventos corporativos. Arcos, columnas, figuras y estructuras espectaculares.</p>
+              <a href="https://fantasyglobos.com.mx/" target="_blank" rel="noopener noreferrer" class="business-card__website" onclick="event.stopPropagation();">
+                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                </svg>
+                fantasyglobos.com.mx
+              </a>
+              <div class="business-card__footer">
+                <div class="business-card__rating">
+                  <span class="business-card__stars">★★★★★</span>
+                  <span class="business-card__reviews">(89)</span>
+                </div>
+                <a href="decoracion/fantasy-globos.html" class="business-card__link">Ver mas</a>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- RENTA DE SONIDO E ILUMINACIÓN - Card -->
+        <article class="business-card business-card--detailed business-card--featured">
+          <a href="decoracion/renta-de-sonido-e-iluminacion.html" class="business-card__link-wrapper">
+            <div class="business-card__image">
+              <div class="business-card__image-placeholder business-card__image-placeholder--brand">
+                <span class="business-card__brand-text">RENTA DE SONIDO E ILUMINACIÓN</span>
+              </div>
+              <span class="business-card__badge business-card__badge--premium">Premium</span>
+              <span class="business-card__badge business-card__badge--verified-small">
+                <svg width="12" height="12" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+              </span>
+            </div>
+            <div class="business-card__content">
+              <div class="business-card__tags">
+                <span class="business-card__tag">Iluminacion</span>
+                <span class="business-card__tag">Sonido</span>
+                <span class="business-card__tag">Corporativos</span>
+              </div>
+              <h3 class="business-card__name">RENTA DE SONIDO E ILUMINACIÓN</h3>
+              <p class="business-card__location">
+                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+                Ciudad de Mexico
+              </p>
+              <p class="business-card__excerpt">Equipos audiovisuales profesionales para eventos corporativos y sociales. +10 anos de experiencia. Iluminacion LED, sonido JBL/QSC, efectos especiales.</p>
+              <a href="https://rentadesonidoeiluminacion.com.mx/" target="_blank" rel="noopener noreferrer" class="business-card__website" onclick="event.stopPropagation();">
+                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                </svg>
+                rentadesonidoeiluminacion.com.mx
+              </a>
+              <div class="business-card__footer">
+                <div class="business-card__rating">
+                  <span class="business-card__stars">★★★★★</span>
+                  <span class="business-card__reviews">(64)</span>
+                </div>
+                <a href="decoracion/renta-de-sonido-e-iluminacion.html" class="business-card__link">Ver mas</a>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- RENTA DE ILUMINACIÓN - Card -->
+        <article class="business-card business-card--detailed business-card--featured">
+          <a href="decoracion/renta-de-iluminacion.html" class="business-card__link-wrapper">
+            <div class="business-card__image">
+              <div class="business-card__image-placeholder business-card__image-placeholder--brand">
+                <span class="business-card__brand-text">RENTA DE ILUMINACIÓN</span>
+              </div>
+              <span class="business-card__badge business-card__badge--premium">Premium</span>
+              <span class="business-card__badge business-card__badge--verified-small">
+                <svg width="12" height="12" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+              </span>
+            </div>
+            <div class="business-card__content">
+              <div class="business-card__tags">
+                <span class="business-card__tag">Iluminacion</span>
+                <span class="business-card__tag">Bodas</span>
+                <span class="business-card__tag">Eventos</span>
+              </div>
+              <h3 class="business-card__name">RENTA DE ILUMINACIÓN</h3>
+              <p class="business-card__location">
+                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+                Ciudad de Mexico
+              </p>
+              <p class="business-card__excerpt">Especialistas en renta de iluminacion profesional para bodas y eventos en CDMX. Guirnaldas LED, iluminacion arquitectonica, ambiente y pista de baile.</p>
+              <a href="https://renta-de-iluminacion.com/" target="_blank" rel="noopener noreferrer" class="business-card__website" onclick="event.stopPropagation();">
+                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                </svg>
+                renta-de-iluminacion.com
+              </a>
+              <div class="business-card__footer">
+                <div class="business-card__rating">
+                  <span class="business-card__stars">★★★★★</span>
+                  <span class="business-card__reviews">(38)</span>
+                </div>
+                <a href="decoracion/renta-de-iluminacion.html" class="business-card__link">Ver mas</a>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- REDEIL - Card Principal -->
+        <article class="business-card business-card--detailed business-card--featured">
+          <a href="decoracion/redeil.html" class="business-card__link-wrapper">
+            <div class="business-card__image">
+              <img src="img/redeil/cabezas-moviles.webp" alt="REDEIL - Renta de iluminacion y audio para eventos" class="business-card__img">
+              <span class="business-card__badge business-card__badge--premium">Premium</span>
+              <span class="business-card__badge business-card__badge--verified-small">
+                <svg width="12" height="12" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+              </span>
+            </div>
+            <div class="business-card__content">
+              <div class="business-card__tags">
+                <span class="business-card__tag">Iluminacion</span>
+                <span class="business-card__tag">Audio</span>
+                <span class="business-card__tag">Efectos</span>
+              </div>
+              <h3 class="business-card__name">REDEIL</h3>
+              <p class="business-card__location">
+                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+                CDMX y Estado de Mexico
+              </p>
+              <p class="business-card__excerpt">Renta de iluminacion LED, audio profesional JBL/QSC y efectos especiales para bodas, XV anos y corporativos. +10 anos de experiencia.</p>
+              <a href="https://redeil.com/" target="_blank" rel="noopener noreferrer" class="business-card__website" onclick="event.stopPropagation();">
+                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                </svg>
+                redeil.com
+              </a>
+              <div class="business-card__footer">
+                <div class="business-card__rating">
+                  <span class="business-card__stars">★★★★★</span>
+                  <span class="business-card__reviews">(47)</span>
+                </div>
+                <a href="decoracion/redeil.html" class="business-card__link">Ver mas</a>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- EVENTECH - Card -->
+        <article class="business-card business-card--detailed business-card--featured">
+          <a href="decoracion/eventech.html" class="business-card__link-wrapper">
+            <div class="business-card__image">
+              <div class="business-card__image-placeholder business-card__image-placeholder--brand">
+                <span class="business-card__brand-text">EVENTECH</span>
+              </div>
+              <span class="business-card__badge business-card__badge--premium">Premium</span>
+              <span class="business-card__badge business-card__badge--verified-small">
+                <svg width="12" height="12" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+              </span>
+            </div>
+            <div class="business-card__content">
+              <div class="business-card__tags">
+                <span class="business-card__tag">Iluminacion</span>
+                <span class="business-card__tag">Sonido</span>
+                <span class="business-card__tag">Mobiliario</span>
+              </div>
+              <h3 class="business-card__name">EVENTECH</h3>
+              <p class="business-card__location">
+                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+                Ciudad de Mexico
+              </p>
+              <p class="business-card__excerpt">Renta de equipos para eventos: sonido profesional, iluminacion espectacular, mobiliario, decoracion y catering para bodas, fiestas y corporativos.</p>
+              <a href="https://eventech.mx/" target="_blank" rel="noopener noreferrer" class="business-card__website" onclick="event.stopPropagation();">
+                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                </svg>
+                eventech.mx
+              </a>
+              <div class="business-card__footer">
+                <div class="business-card__rating">
+                  <span class="business-card__stars">★★★★★</span>
+                  <span class="business-card__reviews">(52)</span>
+                </div>
+                <a href="decoracion/eventech.html" class="business-card__link">Ver mas</a>
+              </div>
+            </div>
+          </a>
+        </article>
+
+      </div>
+
+      <!-- Pagination -->
+      <nav class="pagination">
+        <button class="pagination__btn pagination__btn--prev" disabled>
+          <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+          </svg>
+          Anterior
+        </button>
+        <div class="pagination__numbers">
+          <a href="#" class="pagination__number pagination__number--active">1</a>
+          <a href="#" class="pagination__number">2</a>
+          <a href="#" class="pagination__number">3</a>
+          <span class="pagination__ellipsis">...</span>
+          <a href="#" class="pagination__number">38</a>
+        </div>
+        <button class="pagination__btn pagination__btn--next">
+          Siguiente
+          <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+          </svg>
+        </button>
+      </nav>
+
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta" id="registrar">
+    <div class="cta__container">
+      <h2 class="cta__title">¿Ofreces servicios de decoracion?</h2>
+      <p class="cta__subtitle">Registra tu empresa y conecta con miles de clientes buscando decoradores en Mexico.</p>
+      <a href="#registro-empresa" class="cta__btn">Registrar mi Empresa Gratis</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__grid">
+
+        <div class="footer__brand">
+          <a href="/" class="footer__logo">
+            <img src="img/fiesta-en-casa.png" alt="Fiesta en Casa" class="footer__logo-img">
+          </a>
+          <p class="footer__description">
+            El directorio mas completo de empresas de eventos sociales en Mexico. Encuentra todo lo que necesitas para tu celebracion.
+          </p>
+        </div>
+
+        <div class="footer__links">
+          <h4 class="footer__title">Categorias</h4>
+          <ul class="footer__list">
+            <li><a href="banquetes.html">Banquetes</a></li>
+            <li><a href="decoracion.html">Decoracion</a></li>
+            <li><a href="musica.html">Musica y DJ</a></li>
+            <li><a href="fotografia.html">Fotografia</a></li>
+            <li><a href="categorias.html">Ver Todas</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__links">
+          <h4 class="footer__title">Empresa</h4>
+          <ul class="footer__list">
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#registrar">Registrar Empresa</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__links">
+          <h4 class="footer__title">Legal</h4>
+          <ul class="footer__list">
+            <li><a href="#privacidad">Aviso de Privacidad</a></li>
+            <li><a href="#terminos">Terminos y Condiciones</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2024 Fiesta en Casa. Todos los derechos reservados.</p>
+        <div class="footer__social">
+          <a href="#" class="footer__social-link" aria-label="Facebook">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="#" class="footer__social-link" aria-label="Instagram">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </a>
+          <a href="#" class="footer__social-link" aria-label="Twitter">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>

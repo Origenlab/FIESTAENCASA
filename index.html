@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fiesta en Casa | Directorio de Eventos Sociales en Mexico</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="El directorio mas completo de empresas de eventos sociales en Mexico. Banquetes, decoracion, musica, fotografia y mas.">
+
+  <meta property="og:title" content="Fiesta en Casa - Directorio de Eventos Sociales">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Fiesta en Casa">
+  <meta property="og:description" content="Encuentra las mejores empresas de eventos sociales en Mexico">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#6366f1">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header__container">
+      <a href="/" class="header__logo">
+        <img src="img/fiesta-en-casa.png" alt="Fiesta en Casa" class="header__logo-img">
+      </a>
+
+      <nav class="header__nav" id="mainNav">
+        <a href="/" class="header__nav-link header__nav-link--active">Inicio</a>
+        <a href="categorias.html" class="header__nav-link">Categorias</a>
+        <a href="#contacto" class="header__nav-link">Contacto</a>
+      </nav>
+
+      <div class="header__actions">
+        <a href="#registrar" class="header__btn header__btn--outline">Registrar Empresa</a>
+        <button class="header__menu-toggle" id="menuToggle" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero__container">
+      <h1 class="hero__title">Encuentra todo para tu <span class="hero__highlight">evento perfecto</span></h1>
+      <p class="hero__subtitle">El directorio mas completo de empresas de eventos sociales en Mexico. Conectamos a las mejores empresas con quienes buscan celebrar.</p>
+
+      <!-- Search Box -->
+      <div class="search-box">
+        <div class="search-box__input-group">
+          <svg class="search-box__icon" width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+          </svg>
+          <input type="text" class="search-box__input" placeholder="Buscar banquetes, decoracion, musica..." id="searchInput">
+        </div>
+        <select class="search-box__select" id="locationSelect">
+          <option value="">Toda la Republica</option>
+          <option value="cdmx">Ciudad de Mexico</option>
+          <option value="guadalajara">Guadalajara</option>
+          <option value="monterrey">Monterrey</option>
+          <option value="puebla">Puebla</option>
+          <option value="cancun">Cancun</option>
+          <option value="merida">Merida</option>
+        </select>
+        <button class="search-box__btn" id="searchBtn">Buscar</button>
+      </div>
+
+      <!-- Quick Categories -->
+      <div class="hero__quick-cats">
+        <span class="hero__quick-label">Populares:</span>
+        <a href="banquetes.html" class="hero__quick-link">Banquetes</a>
+        <a href="salones.html" class="hero__quick-link">Salones</a>
+        <a href="fotografia.html" class="hero__quick-link">Fotografia</a>
+        <a href="musica.html" class="hero__quick-link">Musica</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="stats__container">
+      <div class="stats__item">
+        <span class="stats__number">2,500+</span>
+        <span class="stats__label">Empresas Registradas</span>
+      </div>
+      <div class="stats__item">
+        <span class="stats__number">32</span>
+        <span class="stats__label">Estados</span>
+      </div>
+      <div class="stats__item">
+        <span class="stats__number">15+</span>
+        <span class="stats__label">Categorias</span>
+      </div>
+      <div class="stats__item">
+        <span class="stats__number">50,000+</span>
+        <span class="stats__label">Eventos Exitosos</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section class="categories" id="categorias">
+    <div class="categories__container">
+      <div class="categories__header">
+        <h2 class="categories__title">Explora por Categoria</h2>
+        <p class="categories__subtitle">Encuentra exactamente lo que necesitas para tu evento</p>
+      </div>
+
+      <div class="categories__grid">
+        <a href="banquetes.html" class="category-card">
+          <div class="category-card__icon">
+            <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+            </svg>
+          </div>
+          <h3 class="category-card__title">Banquetes</h3>
+          <p class="category-card__count">450+ empresas</p>
+        </a>
+
+        <a href="decoracion.html" class="category-card">
+          <div class="category-card__icon">
+            <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+            </svg>
+          </div>
+          <h3 class="category-card__title">Decoracion</h3>
+          <p class="category-card__count">380+ empresas</p>
+        </a>
+
+        <a href="salones.html" class="category-card">
+          <div class="category-card__icon">
+            <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+            </svg>
+          </div>
+          <h3 class="category-card__title">Salones</h3>
+          <p class="category-card__count">290+ empresas</p>
+        </a>
+
+        <a href="musica.html" class="category-card">
+          <div class="category-card__icon">
+            <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"/>
+            </svg>
+          </div>
+          <h3 class="category-card__title">Musica y DJ</h3>
+          <p class="category-card__count">320+ empresas</p>
+        </a>
+
+        <a href="fotografia.html" class="category-card">
+          <div class="category-card__icon">
+            <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"/>
+            </svg>
+          </div>
+          <h3 class="category-card__title">Fotografia</h3>
+          <p class="category-card__count">410+ empresas</p>
+        </a>
+
+        <a href="pasteles.html" class="category-card">
+          <div class="category-card__icon">
+            <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18z"/>
+            </svg>
+          </div>
+          <h3 class="category-card__title">Pasteles</h3>
+          <p class="category-card__count">180+ empresas</p>
+        </a>
+
+        <a href="mobiliario.html" class="category-card">
+          <div class="category-card__icon">
+            <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
+            </svg>
+          </div>
+          <h3 class="category-card__title">Mobiliario</h3>
+          <p class="category-card__count">150+ empresas</p>
+        </a>
+
+        <a href="fiestas-infantiles.html" class="category-card">
+          <div class="category-card__icon">
+            <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          <h3 class="category-card__title">Fiestas Infantiles</h3>
+          <p class="category-card__count">250+ empresas</p>
+        </a>
+
+        <a href="categorias.html" class="category-card category-card--all">
+          <div class="category-card__icon">
+            <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/>
+            </svg>
+          </div>
+          <h3 class="category-card__title">Ver Todas</h3>
+          <p class="category-card__count">15+ categorias</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Section -->
+  <section class="featured">
+    <div class="featured__container">
+      <div class="featured__header">
+        <h2 class="featured__title">Empresas Destacadas</h2>
+        <a href="#todas-empresas" class="featured__view-all">Ver todas</a>
+      </div>
+
+      <div class="featured__grid">
+        <!-- Business Card 1 -->
+        <article class="business-card">
+          <div class="business-card__image">
+            <span class="business-card__badge">Verificado</span>
+          </div>
+          <div class="business-card__content">
+            <div class="business-card__category">Banquetes</div>
+            <h3 class="business-card__name">Banquetes La Hacienda</h3>
+            <p class="business-card__location">
+              <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
+              Ciudad de Mexico
+            </p>
+            <div class="business-card__rating">
+              <span class="business-card__stars">★★★★★</span>
+              <span class="business-card__reviews">(128 resenas)</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Business Card 2 -->
+        <article class="business-card">
+          <div class="business-card__image">
+            <span class="business-card__badge">Verificado</span>
+          </div>
+          <div class="business-card__content">
+            <div class="business-card__category">Fotografia</div>
+            <h3 class="business-card__name">Studio Moments</h3>
+            <p class="business-card__location">
+              <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
+              Guadalajara
+            </p>
+            <div class="business-card__rating">
+              <span class="business-card__stars">★★★★★</span>
+              <span class="business-card__reviews">(95 resenas)</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Business Card 3 -->
+        <article class="business-card">
+          <div class="business-card__image">
+            <span class="business-card__badge">Premium</span>
+          </div>
+          <div class="business-card__content">
+            <div class="business-card__category">Decoracion</div>
+            <h3 class="business-card__name">Flores & Detalles</h3>
+            <p class="business-card__location">
+              <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
+              Monterrey
+            </p>
+            <div class="business-card__rating">
+              <span class="business-card__stars">★★★★☆</span>
+              <span class="business-card__reviews">(67 resenas)</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta" id="registrar">
+    <div class="cta__container">
+      <h2 class="cta__title">¿Tienes una empresa de eventos?</h2>
+      <p class="cta__subtitle">Unete al directorio mas grande de Mexico y conecta con miles de clientes potenciales.</p>
+      <a href="#registro-empresa" class="cta__btn">Registrar mi Empresa Gratis</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__grid">
+
+        <div class="footer__brand">
+          <a href="/" class="footer__logo">
+            <img src="img/fiesta-en-casa.png" alt="Fiesta en Casa" class="footer__logo-img">
+          </a>
+          <p class="footer__description">
+            El directorio mas completo de empresas de eventos sociales en Mexico. Encuentra todo lo que necesitas para tu celebracion.
+          </p>
+        </div>
+
+        <div class="footer__links">
+          <h4 class="footer__title">Categorias</h4>
+          <ul class="footer__list">
+            <li><a href="banquetes.html">Banquetes</a></li>
+            <li><a href="decoracion.html">Decoracion</a></li>
+            <li><a href="musica.html">Musica y DJ</a></li>
+            <li><a href="fotografia.html">Fotografia</a></li>
+            <li><a href="categorias.html">Ver Todas</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__links">
+          <h4 class="footer__title">Empresa</h4>
+          <ul class="footer__list">
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#registrar">Registrar Empresa</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__links">
+          <h4 class="footer__title">Legal</h4>
+          <ul class="footer__list">
+            <li><a href="#privacidad">Aviso de Privacidad</a></li>
+            <li><a href="#terminos">Terminos y Condiciones</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2024 Fiesta en Casa. Todos los derechos reservados.</p>
+        <div class="footer__social">
+          <a href="#" class="footer__social-link" aria-label="Facebook">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="#" class="footer__social-link" aria-label="Instagram">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </a>
+          <a href="#" class="footer__social-link" aria-label="Twitter">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
