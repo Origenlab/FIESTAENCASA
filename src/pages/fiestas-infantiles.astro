@@ -1,0 +1,479 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const schemas = [
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Empresas de Fiestas Infantiles en Mexico",
+    "description": "Directorio de empresas para fiestas infantiles en Mexico",
+    "numberOfItems": 4,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "LocalBusiness",
+          "name": "Brincolins",
+          "description": "Dale un upgrade epico a tu fiesta. Brincolines, inflables acuaticos, paredes para escalar, deportivos y paquetes todo incluido en CDMX.",
+          "address": { "@type": "PostalAddress", "addressLocality": "Ciudad de Mexico - Insurgentes", "addressCountry": "MX" },
+          "url": "https://brincolins.com/",
+          "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5", "reviewCount": "224" }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "LocalBusiness",
+          "name": "Inflablee",
+          "description": "La renta de inflables mas epica de CDMX. Castillos gigantes, resbaladillas acuaticas, pistas de obstaculos. Diversion sin limites para tu evento.",
+          "address": { "@type": "PostalAddress", "addressLocality": "Ciudad de Mexico - Reforma", "addressCountry": "MX" },
+          "url": "https://inflablee.com/",
+          "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5", "reviewCount": "186" }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "LocalBusiness",
+          "name": "Renta de Inflables",
+          "description": "INFLAFI - Tu opcion #1 en renta de inflables en CDMX. Castillos, toboganes, inflables para bodas. Paquetes completos con mobiliario, decoracion y mas.",
+          "address": { "@type": "PostalAddress", "addressLocality": "Ciudad de Mexico - Polanco", "addressCountry": "MX" },
+          "url": "https://renta-de-inflables.com/",
+          "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5", "reviewCount": "312" }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@type": "LocalBusiness",
+          "name": "Inflables Para Fiestas",
+          "description": "Renta de inflables en CDMX. Brincolines, castillos, toboganes y juegos para fiestas infantiles. Servicio a domicilio, instalacion y supervision incluidas.",
+          "address": { "@type": "PostalAddress", "addressLocality": "Ciudad de Mexico (16 Alcaldias)", "addressCountry": "MX" },
+          "url": "https://inflablesparafiestas.com.mx/",
+          "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5", "reviewCount": "248" }
+        }
+      }
+    ]
+  }
+];
+---
+
+<Layout
+  title="Fiestas Infantiles | Fiesta en Casa"
+  description="Encuentra las mejores empresas para fiestas infantiles en Mexico. Inflables, animadores, personajes, payasos, shows, piñatas y todo para la fiesta de tus hijos."
+  ogTitle="Fiestas Infantiles - Fiesta en Casa"
+  ogDescription="Directorio de empresas para fiestas infantiles en Mexico"
+  schemas={schemas}
+>
+
+  <!-- Category Hero -->
+  <section class="category-hero category-hero--two-col">
+    <div class="category-hero__bg"></div>
+    <div class="category-hero__container">
+      <div class="category-hero__breadcrumb">
+        <a href="/">Inicio</a>
+        <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+        <span>Fiestas Infantiles</span>
+      </div>
+
+      <div class="category-hero__grid">
+        <div class="category-hero__content">
+          <div class="category-hero__icon">
+            <svg width="48" height="48" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          <h1 class="category-hero__title">Fiestas Infantiles</h1>
+          <p class="category-hero__subtitle">Crea momentos magicos para los mas pequenos. Encuentra inflables, animadores, personajes, shows y todo lo necesario para una fiesta inolvidable.</p>
+
+          <div class="category-hero__stats">
+            <div class="category-hero__stat">
+              <span class="category-hero__stat-number">250+</span>
+              <span class="category-hero__stat-label">Empresas</span>
+            </div>
+            <div class="category-hero__stat">
+              <span class="category-hero__stat-number">4.9</span>
+              <span class="category-hero__stat-label">Calificacion Promedio</span>
+            </div>
+            <div class="category-hero__stat">
+              <span class="category-hero__stat-number">8k+</span>
+              <span class="category-hero__stat-label">Fiestas Realizadas</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="category-hero__info">
+          <div class="category-hero__info-card">
+            <h2 class="category-hero__info-title">Servicios para Fiestas Infantiles en Mexico</h2>
+            <p class="category-hero__info-text">
+              Las fiestas infantiles son momentos especiales que quedan grabados para siempre en la memoria de los ninos. En Fiesta en Casa conectamos a los padres con los mejores proveedores de entretenimiento infantil, desde renta de inflables y brincolin hasta animadores profesionales, personajes de peliculas, payasos, magos, shows de titeres, pintacaritas y mucho mas. Nuestro directorio incluye empresas verificadas que garantizan seguridad y diversion.
+            </p>
+            <p class="category-hero__info-text">
+              Cada proveedor en nuestra plataforma ha sido seleccionado por su calidad y profesionalismo. Compara opciones, lee resenas de otros padres y solicita cotizaciones sin compromiso. Ya sea una fiesta tematica de superheroes, princesas, dinosaurios o cualquier personaje favorito, aqui encontraras todo lo necesario para hacer realidad la fiesta sonada de tus hijos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filters & Search -->
+  <section class="category-filters">
+    <div class="category-filters__container">
+      <div class="category-filters__search">
+        <svg class="category-filters__search-icon" width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+        </svg>
+        <input type="text" class="category-filters__search-input" placeholder="Buscar en fiestas infantiles...">
+      </div>
+
+      <div class="category-filters__options">
+        <select class="category-filters__select">
+          <option value="">Ubicacion</option>
+          <option value="cdmx">Ciudad de Mexico</option>
+          <option value="guadalajara">Guadalajara</option>
+          <option value="monterrey">Monterrey</option>
+          <option value="puebla">Puebla</option>
+          <option value="cancun">Cancun</option>
+        </select>
+
+        <select class="category-filters__select">
+          <option value="">Tipo de Servicio</option>
+          <option value="inflables">Inflables y Brincolines</option>
+          <option value="animadores">Animadores</option>
+          <option value="personajes">Personajes</option>
+          <option value="payasos">Payasos</option>
+          <option value="shows">Shows y Espectaculos</option>
+          <option value="integral">Paquetes Integrales</option>
+        </select>
+
+        <select class="category-filters__select">
+          <option value="">Ordenar por</option>
+          <option value="rating">Mejor Calificados</option>
+          <option value="reviews">Mas Resenados</option>
+          <option value="recent">Mas Recientes</option>
+        </select>
+      </div>
+    </div>
+  </section>
+
+  <!-- Subcategories -->
+  <section class="subcategories">
+    <div class="subcategories__container">
+      <div class="subcategories__scroll">
+        <a href="#todos" class="subcategory-chip subcategory-chip--active">
+          <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"/>
+          </svg>
+          Todos
+        </a>
+        <a href="#inflables" class="subcategory-chip">
+          <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+          Inflables
+        </a>
+        <a href="#animadores" class="subcategory-chip">
+          <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
+          </svg>
+          Animadores
+        </a>
+        <a href="#personajes" class="subcategory-chip">
+          <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+          Personajes
+        </a>
+        <a href="#payasos" class="subcategory-chip">
+          <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+          Payasos
+        </a>
+        <a href="#shows" class="subcategory-chip">
+          <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+          </svg>
+          Shows
+        </a>
+        <a href="#mesas" class="subcategory-chip">
+          <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18z"/>
+          </svg>
+          Mesas de Dulces
+        </a>
+        <a href="#pinatas" class="subcategory-chip">
+          <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/>
+          </svg>
+          Pinatas
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Results Grid -->
+  <section class="category-results">
+    <div class="category-results__container">
+      <div class="category-results__header">
+        <p class="category-results__count">Mostrando <strong>250</strong> empresas de fiestas infantiles</p>
+        <div class="category-results__view-toggle">
+          <button class="view-btn view-btn--active" aria-label="Vista de cuadricula">
+            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/>
+            </svg>
+          </button>
+          <button class="view-btn" aria-label="Vista de lista">
+            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Featured Banner -->
+      <div class="featured-banner">
+        <div class="featured-banner__content">
+          <span class="featured-banner__badge">Destacado</span>
+          <h3 class="featured-banner__title">Inflables y Diversiones MX</h3>
+          <p class="featured-banner__description">Los mejores inflables, brincolines y juegos mecanicos para fiestas infantiles en CDMX</p>
+          <div class="featured-banner__meta">
+            <span class="featured-banner__rating">&#9733;&#9733;&#9733;&#9733;&#9733; 4.9</span>
+            <span class="featured-banner__location">Ciudad de Mexico</span>
+          </div>
+        </div>
+        <a href="#" class="featured-banner__btn">Ver Perfil</a>
+      </div>
+
+      <!-- Business Grid -->
+      <div class="business-grid">
+
+        <!-- BRINCOLINS - Card -->
+        <article class="business-card business-card--detailed business-card--featured">
+          <a href="/fiestas-infantiles/brincolins" class="business-card__link-wrapper">
+            <div class="business-card__image">
+              <div class="business-card__image-placeholder business-card__image-placeholder--brand">
+                <span class="business-card__brand-text">BRINCOLINS</span>
+              </div>
+              <span class="business-card__badge business-card__badge--premium">Premium</span>
+              <span class="business-card__badge business-card__badge--verified-small">
+                <svg width="12" height="12" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+              </span>
+            </div>
+            <div class="business-card__content">
+              <div class="business-card__tags">
+                <span class="business-card__tag">Brincolines</span>
+                <span class="business-card__tag">Acuaticos</span>
+                <span class="business-card__tag">Paquetes</span>
+              </div>
+              <h3 class="business-card__name">Brincolins</h3>
+              <p class="business-card__location">
+                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+                Ciudad de Mexico - Insurgentes
+              </p>
+              <p class="business-card__excerpt">Dale un upgrade epico a tu fiesta. Brincolines, inflables acuaticos, paredes para escalar, deportivos y paquetes todo incluido en CDMX.</p>
+              <a href="https://brincolins.com/" target="_blank" rel="noopener noreferrer" class="business-card__website" onclick="event.stopPropagation();">
+                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                </svg>
+                brincolins.com
+              </a>
+              <div class="business-card__footer">
+                <div class="business-card__rating">
+                  <span class="business-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                  <span class="business-card__reviews">(224)</span>
+                </div>
+                <a href="/fiestas-infantiles/brincolins" class="business-card__link">Ver mas</a>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- INFLABLEE - Card -->
+        <article class="business-card business-card--detailed business-card--featured">
+          <a href="/fiestas-infantiles/inflablee" class="business-card__link-wrapper">
+            <div class="business-card__image">
+              <div class="business-card__image-placeholder business-card__image-placeholder--brand">
+                <span class="business-card__brand-text">INFLABLEE</span>
+              </div>
+              <span class="business-card__badge business-card__badge--premium">Premium</span>
+              <span class="business-card__badge business-card__badge--verified-small">
+                <svg width="12" height="12" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+              </span>
+            </div>
+            <div class="business-card__content">
+              <div class="business-card__tags">
+                <span class="business-card__tag">Inflables</span>
+                <span class="business-card__tag">Brincolines</span>
+                <span class="business-card__tag">Acuaticos</span>
+              </div>
+              <h3 class="business-card__name">Inflablee</h3>
+              <p class="business-card__location">
+                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+                Ciudad de Mexico - Reforma
+              </p>
+              <p class="business-card__excerpt">La renta de inflables mas epica de CDMX. Castillos gigantes, resbaladillas acuaticas, pistas de obstaculos. Diversion sin limites para tu evento.</p>
+              <a href="https://inflablee.com/" target="_blank" rel="noopener noreferrer" class="business-card__website" onclick="event.stopPropagation();">
+                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                </svg>
+                inflablee.com
+              </a>
+              <div class="business-card__footer">
+                <div class="business-card__rating">
+                  <span class="business-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                  <span class="business-card__reviews">(186)</span>
+                </div>
+                <a href="/fiestas-infantiles/inflablee" class="business-card__link">Ver mas</a>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- RENTA DE INFLABLES (INFLAFI) - Card -->
+        <article class="business-card business-card--detailed business-card--featured">
+          <a href="/fiestas-infantiles/renta-de-inflables" class="business-card__link-wrapper">
+            <div class="business-card__image">
+              <div class="business-card__image-placeholder business-card__image-placeholder--brand">
+                <span class="business-card__brand-text">RENTA DE INFLABLES</span>
+              </div>
+              <span class="business-card__badge business-card__badge--premium">Premium</span>
+              <span class="business-card__badge business-card__badge--verified-small">
+                <svg width="12" height="12" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+              </span>
+            </div>
+            <div class="business-card__content">
+              <div class="business-card__tags">
+                <span class="business-card__tag">Inflables</span>
+                <span class="business-card__tag">Paquetes</span>
+                <span class="business-card__tag">Servicios</span>
+              </div>
+              <h3 class="business-card__name">Renta de Inflables</h3>
+              <p class="business-card__location">
+                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+                Ciudad de Mexico - Polanco
+              </p>
+              <p class="business-card__excerpt">INFLAFI - Tu opcion #1 en renta de inflables en CDMX. Castillos, toboganes, inflables para bodas. Paquetes completos con mobiliario, decoracion y mas.</p>
+              <a href="https://renta-de-inflables.com/" target="_blank" rel="noopener noreferrer" class="business-card__website" onclick="event.stopPropagation();">
+                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                </svg>
+                renta-de-inflables.com
+              </a>
+              <div class="business-card__footer">
+                <div class="business-card__rating">
+                  <span class="business-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                  <span class="business-card__reviews">(312)</span>
+                </div>
+                <a href="/fiestas-infantiles/renta-de-inflables" class="business-card__link">Ver mas</a>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- INFLABLES PARA FIESTAS (INFLAPY) - Card -->
+        <article class="business-card business-card--detailed business-card--featured">
+          <a href="/fiestas-infantiles/inflables-para-fiestas" class="business-card__link-wrapper">
+            <div class="business-card__image">
+              <div class="business-card__image-placeholder business-card__image-placeholder--brand">
+                <span class="business-card__brand-text">INFLABLES PARA FIESTAS</span>
+              </div>
+              <span class="business-card__badge business-card__badge--premium">Premium</span>
+              <span class="business-card__badge business-card__badge--verified-small">
+                <svg width="12" height="12" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+              </span>
+            </div>
+            <div class="business-card__content">
+              <div class="business-card__tags">
+                <span class="business-card__tag">Inflables</span>
+                <span class="business-card__tag">Brincolines</span>
+                <span class="business-card__tag">Castillos</span>
+              </div>
+              <h3 class="business-card__name">Inflables Para Fiestas</h3>
+              <p class="business-card__location">
+                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+                Ciudad de Mexico (16 Alcaldias)
+              </p>
+              <p class="business-card__excerpt">Renta de inflables en CDMX. Brincolines, castillos, toboganes y juegos para fiestas infantiles. Servicio a domicilio, instalacion y supervision incluidas.</p>
+              <a href="https://inflablesparafiestas.com.mx/" target="_blank" rel="noopener noreferrer" class="business-card__website" onclick="event.stopPropagation();">
+                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                </svg>
+                inflablesparafiestas.com.mx
+              </a>
+              <div class="business-card__footer">
+                <div class="business-card__rating">
+                  <span class="business-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                  <span class="business-card__reviews">(248)</span>
+                </div>
+                <a href="/fiestas-infantiles/inflables-para-fiestas" class="business-card__link">Ver mas</a>
+              </div>
+            </div>
+          </a>
+        </article>
+
+      </div>
+
+      <!-- Pagination -->
+      <nav class="pagination">
+        <button class="pagination__btn pagination__btn--prev" disabled>
+          <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+          </svg>
+          Anterior
+        </button>
+        <div class="pagination__numbers">
+          <a href="#" class="pagination__number pagination__number--active">1</a>
+          <a href="#" class="pagination__number">2</a>
+          <a href="#" class="pagination__number">3</a>
+          <span class="pagination__ellipsis">...</span>
+          <a href="#" class="pagination__number">25</a>
+        </div>
+        <button class="pagination__btn pagination__btn--next">
+          Siguiente
+          <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+          </svg>
+        </button>
+      </nav>
+
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta" id="registrar">
+    <div class="cta__container">
+      <h2 class="cta__title">¿Ofreces servicios para fiestas infantiles?</h2>
+      <p class="cta__subtitle">Registra tu empresa y conecta con miles de padres buscando proveedores para la fiesta de sus hijos en Mexico.</p>
+      <a href="#registro-empresa" class="cta__btn">Registrar mi Empresa Gratis</a>
+    </div>
+  </section>
+
+</Layout>

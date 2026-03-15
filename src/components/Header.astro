@@ -1,0 +1,26 @@
+---
+const currentPath = Astro.url.pathname;
+---
+
+<header class="header">
+  <div class="header__container">
+    <a href="/" class="header__logo">
+      <img src="/img/fiesta-en-casa.png" alt="Fiesta en Casa" class="header__logo-img">
+    </a>
+
+    <nav class="header__nav" id="mainNav">
+      <a href="/" class:list={["header__nav-link", { "header__nav-link--active": currentPath === "/" }]}>Inicio</a>
+      <a href="/categorias" class:list={["header__nav-link", { "header__nav-link--active": currentPath.startsWith("/categorias") }]}>Categorias</a>
+      <a href="/#contacto" class="header__nav-link">Contacto</a>
+    </nav>
+
+    <div class="header__actions">
+      <a href="/#registrar" class="header__btn header__btn--outline">Registrar Empresa</a>
+      <button class="header__menu-toggle" id="menuToggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+</header>

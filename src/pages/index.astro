@@ -1,0 +1,356 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const schemas = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Fiesta en Casa",
+    "url": "https://fiestaencasa.com.mx",
+    "description": "El directorio mas completo de empresas de eventos sociales en Mexico.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://fiestaencasa.com.mx/buscar?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Categorias de Servicios para Eventos",
+    "description": "Directorio de empresas de eventos sociales en Mexico",
+    "numberOfItems": 9,
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Banquetes", "url": "https://fiestaencasa.com.mx/categorias" },
+      { "@type": "ListItem", "position": 2, "name": "Decoracion", "url": "https://fiestaencasa.com.mx/decoracion" },
+      { "@type": "ListItem", "position": 3, "name": "Salones", "url": "https://fiestaencasa.com.mx/categorias" },
+      { "@type": "ListItem", "position": 4, "name": "Musica y DJ", "url": "https://fiestaencasa.com.mx/categorias" },
+      { "@type": "ListItem", "position": 5, "name": "Fotografia", "url": "https://fiestaencasa.com.mx/categorias" },
+      { "@type": "ListItem", "position": 6, "name": "Pasteles", "url": "https://fiestaencasa.com.mx/categorias" },
+      { "@type": "ListItem", "position": 7, "name": "Mobiliario", "url": "https://fiestaencasa.com.mx/categorias" },
+      { "@type": "ListItem", "position": 8, "name": "Fiestas Infantiles", "url": "https://fiestaencasa.com.mx/fiestas-infantiles" },
+      { "@type": "ListItem", "position": 9, "name": "Ver Todas", "url": "https://fiestaencasa.com.mx/categorias" }
+    ]
+  }
+];
+---
+
+<Layout
+  title="Fiesta en Casa | Directorio de Eventos Sociales en Mexico"
+  description="El directorio mas completo de empresas de eventos sociales en Mexico. Banquetes, decoracion, musica, fotografia y mas."
+  ogTitle="Fiesta en Casa - Directorio de Eventos Sociales"
+  ogDescription="Encuentra las mejores empresas de eventos sociales en Mexico"
+  canonical="https://fiestaencasa.com.mx/"
+  schemas={schemas}
+>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero__container">
+      <div class="category-hero__grid">
+        <div class="category-hero__content">
+          <h1 class="hero__title">Encuentra todo para tu <span class="hero__highlight">evento perfecto</span></h1>
+          <p class="hero__subtitle">El directorio mas completo de empresas de eventos sociales en Mexico. Conectamos a las mejores empresas con quienes buscan celebrar.</p>
+
+          <!-- Search Box -->
+          <div class="search-box">
+            <div class="search-box__input-group">
+              <svg class="search-box__icon" width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+              </svg>
+              <input type="text" class="search-box__input" placeholder="Buscar banquetes, decoracion, musica..." id="searchInput">
+            </div>
+            <select class="search-box__select" id="locationSelect">
+              <option value="">Toda la Republica</option>
+              <option value="cdmx">Ciudad de Mexico</option>
+              <option value="guadalajara">Guadalajara</option>
+              <option value="monterrey">Monterrey</option>
+              <option value="puebla">Puebla</option>
+              <option value="cancun">Cancun</option>
+              <option value="merida">Merida</option>
+            </select>
+            <button class="search-box__btn" id="searchBtn">Buscar</button>
+          </div>
+
+          <!-- Quick Categories -->
+          <div class="hero__quick-cats">
+            <span class="hero__quick-label">Populares:</span>
+            <a href="/categorias" class="hero__quick-link">Banquetes</a>
+            <a href="/categorias" class="hero__quick-link">Salones</a>
+            <a href="/categorias" class="hero__quick-link">Fotografia</a>
+            <a href="/categorias" class="hero__quick-link">Musica</a>
+          </div>
+        </div>
+
+        <div class="category-hero__info">
+          <div class="category-hero__info-card">
+            <h2 class="category-hero__info-title">El Directorio de Eventos Sociales Mas Grande de Mexico</h2>
+            <p class="category-hero__info-text">
+              Fiesta en Casa reune a los mejores proveedores de servicios para eventos sociales en todo Mexico. Desde banquetes y decoracion hasta musica, fotografia, salones, iluminacion profesional y entretenimiento, cada categoria cuenta con empresas verificadas y evaluadas por miles de clientes satisfechos. Nuestro directorio te permite comparar opciones, leer resenas reales y contactar directamente a los proveedores.
+            </p>
+            <p class="category-hero__info-text">
+              Ya sea que estes planeando una boda elegante, unos XV anos espectaculares, un bautizo intimo, una fiesta infantil tematica o un evento corporativo de alto nivel, aqui encontraras todo lo que necesitas en un solo lugar. Navega por nuestras categorias, descubre empresas destacadas y haz realidad el evento de tus suenos con los profesionales mas confiables de Mexico.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="stats__container">
+      <div class="stats__item">
+        <span class="stats__number">2,500+</span>
+        <span class="stats__label">Empresas Registradas</span>
+      </div>
+      <div class="stats__item">
+        <span class="stats__number">32</span>
+        <span class="stats__label">Estados</span>
+      </div>
+      <div class="stats__item">
+        <span class="stats__number">15+</span>
+        <span class="stats__label">Categorias</span>
+      </div>
+      <div class="stats__item">
+        <span class="stats__number">50,000+</span>
+        <span class="stats__label">Eventos Exitosos</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section class="categories" id="categorias">
+    <div class="categories__container">
+      <div class="categories__header">
+        <h2 class="categories__title">Explora por Categoria</h2>
+        <p class="categories__subtitle">Encuentra exactamente lo que necesitas para tu evento</p>
+      </div>
+
+      <div class="categories__grid">
+        <a href="/categorias" class="category-card">
+          <div class="category-card__icon">
+            <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+            </svg>
+          </div>
+          <h3 class="category-card__title">Banquetes</h3>
+          <p class="category-card__count">450+ empresas</p>
+        </a>
+
+        <a href="/decoracion" class="category-card">
+          <div class="category-card__icon">
+            <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+            </svg>
+          </div>
+          <h3 class="category-card__title">Decoracion</h3>
+          <p class="category-card__count">380+ empresas</p>
+        </a>
+
+        <a href="/categorias" class="category-card">
+          <div class="category-card__icon">
+            <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+            </svg>
+          </div>
+          <h3 class="category-card__title">Salones</h3>
+          <p class="category-card__count">290+ empresas</p>
+        </a>
+
+        <a href="/categorias" class="category-card">
+          <div class="category-card__icon">
+            <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"/>
+            </svg>
+          </div>
+          <h3 class="category-card__title">Musica y DJ</h3>
+          <p class="category-card__count">320+ empresas</p>
+        </a>
+
+        <a href="/categorias" class="category-card">
+          <div class="category-card__icon">
+            <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"/>
+            </svg>
+          </div>
+          <h3 class="category-card__title">Fotografia</h3>
+          <p class="category-card__count">410+ empresas</p>
+        </a>
+
+        <a href="/categorias" class="category-card">
+          <div class="category-card__icon">
+            <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18z"/>
+            </svg>
+          </div>
+          <h3 class="category-card__title">Pasteles</h3>
+          <p class="category-card__count">180+ empresas</p>
+        </a>
+
+        <a href="/categorias" class="category-card">
+          <div class="category-card__icon">
+            <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
+            </svg>
+          </div>
+          <h3 class="category-card__title">Mobiliario</h3>
+          <p class="category-card__count">150+ empresas</p>
+        </a>
+
+        <a href="/fiestas-infantiles" class="category-card">
+          <div class="category-card__icon">
+            <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          <h3 class="category-card__title">Fiestas Infantiles</h3>
+          <p class="category-card__count">250+ empresas</p>
+        </a>
+
+        <a href="/categorias" class="category-card category-card--all">
+          <div class="category-card__icon">
+            <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/>
+            </svg>
+          </div>
+          <h3 class="category-card__title">Ver Todas</h3>
+          <p class="category-card__count">15+ categorias</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Section -->
+  <section class="featured">
+    <div class="featured__container">
+      <div class="featured__header">
+        <h2 class="featured__title">Empresas Destacadas</h2>
+        <a href="/categorias" class="featured__view-all">Ver todas</a>
+      </div>
+
+      <div class="featured__grid">
+        <article class="business-card">
+          <div class="business-card__image">
+            <span class="business-card__badge">Verificado</span>
+          </div>
+          <div class="business-card__content">
+            <div class="business-card__category">Banquetes</div>
+            <h3 class="business-card__name">Banquetes La Hacienda</h3>
+            <p class="business-card__location">
+              <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
+              Ciudad de Mexico
+            </p>
+            <div class="business-card__rating">
+              <span class="business-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              <span class="business-card__reviews">(128 resenas)</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="business-card">
+          <div class="business-card__image">
+            <span class="business-card__badge">Verificado</span>
+          </div>
+          <div class="business-card__content">
+            <div class="business-card__category">Fotografia</div>
+            <h3 class="business-card__name">Studio Moments</h3>
+            <p class="business-card__location">
+              <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
+              Guadalajara
+            </p>
+            <div class="business-card__rating">
+              <span class="business-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              <span class="business-card__reviews">(95 resenas)</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="business-card">
+          <div class="business-card__image">
+            <span class="business-card__badge">Premium</span>
+          </div>
+          <div class="business-card__content">
+            <div class="business-card__category">Decoracion</div>
+            <h3 class="business-card__name">Flores & Detalles</h3>
+            <p class="business-card__location">
+              <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
+              Monterrey
+            </p>
+            <div class="business-card__rating">
+              <span class="business-card__stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+              <span class="business-card__reviews">(67 resenas)</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contacto">
+    <div class="contact__container">
+      <div class="contact__header">
+        <h2 class="contact__title">Contactanos</h2>
+        <p class="contact__subtitle">¿Tienes preguntas? Estamos aqui para ayudarte</p>
+      </div>
+
+      <div class="contact__grid">
+        <div class="contact__form-wrapper">
+          <form class="contact__form" id="contactForm">
+            <div class="contact__form-group">
+              <label for="nombre" class="contact__label">Nombre</label>
+              <input type="text" id="nombre" name="nombre" class="contact__input" placeholder="Tu nombre" required>
+            </div>
+            <div class="contact__form-group">
+              <label for="email" class="contact__label">Email</label>
+              <input type="email" id="email" name="email" class="contact__input" placeholder="tu@email.com" required>
+            </div>
+            <div class="contact__form-group">
+              <label for="telefono" class="contact__label">Telefono</label>
+              <input type="tel" id="telefono" name="telefono" class="contact__input" placeholder="55 1234 5678">
+            </div>
+            <div class="contact__form-group">
+              <label for="mensaje" class="contact__label">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" class="contact__textarea" placeholder="¿En que podemos ayudarte?" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="contact__btn">Enviar Mensaje</button>
+          </form>
+        </div>
+
+        <div class="contact__map-wrapper">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.661073074!2d-99.1821066!3d19.4358273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f929b83cee8d%3A0xf7daf3c1054f7fe6!2sMesa%20de%20dulces%20para%20fiestas%20y%20eventos%20sociales!5e0!3m2!1ses!2smx!4v1702329600000!5m2!1ses!2smx"
+            width="100%"
+            height="100%"
+            style="border:0; min-height: 400px;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Ubicacion - Mesa de dulces para fiestas y eventos sociales">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta" id="registrar">
+    <div class="cta__container">
+      <h2 class="cta__title">¿Tienes una empresa de eventos?</h2>
+      <p class="cta__subtitle">Unete al directorio mas grande de Mexico y conecta con miles de clientes potenciales.</p>
+      <a href="#registro-empresa" class="cta__btn">Registrar mi Empresa Gratis</a>
+    </div>
+  </section>
+
+</Layout>
